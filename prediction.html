@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Bike Price</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Pre-Owned Bike Price Prediction</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="prediction.html">Prediction</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Enter Bike Details</h2>
+            <form id="predictionForm">
+                <label for="brand">Brand:</label>
+                <select id="brand" name="brand" required>
+                    <!-- Add bike brands fetched from Google -->
+                </select>
+                
+                <label for="model">Model:</label>
+                <select id="model" name="model" required>
+                    <!-- Add bike models fetched from Google -->
+                </select>
+                
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year" required>
+                
+                <label for="mileage">Mileage (in km):</label>
+                <input type="number" id="mileage" name="mileage" required>
+                
+                <label for="condition">Condition:</label>
+                <select id="condition" name="condition" required>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="fair">Fair</option>
+                    <option value="poor">Poor</option>
+                </select>
+                
+                <button type="submit" class="animated-button">Predict Price</button>
+            </form>
+        </section>
+        <section class="result-section">
+            <h2>Predicted Price</h2>
+            <p id="result">Fill in the details and click 'Predict Price' to see the result.</p>
+        </section>
+    </main>
+    <!-- Custom Alert Box -->
+    <div id="customAlert" class="alert">
+        <div class="alert-content">
+            <span class="close">&times;</span>
+            <p id="alertMessage">This is a custom alert box!</p>
+            <button id="option1">Okay, Thank you!</button>
+            <button id="option2">See Recommendations</button>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Backbencher's Binary Solution</h2>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank" class="social-link">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-link">
+                    <img src="twitter.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-link">
+                    <img src="Instagram_icon.png.webp" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
